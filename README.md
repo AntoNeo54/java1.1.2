@@ -7,7 +7,7 @@
 На тестирование затрачено: 1 час
 
 В результате тестирования выявлены следующие дефекты:
-*  #1 [#issue-733712999]()
+* Валидация банковских карт не проходит при количестве символов в номере не равным 16 #1 [1#issue-733760229](https://github.com/AntoNeo54/java1.1.2/issues/1#issue-733760229)
 
 ## Описание процесса тестирования
 
@@ -18,14 +18,15 @@
 В качестве тестовых данных использовались данные сгенерированные [Credit Card Generator](https://cardgenerator.io):
 
 Номера кредитных карт разных платёжных систем:
-* VISA                    4769008194770232
-* MasterCard              5298472761011247
-* Discover Card           6011634767694409
-* JCB Card                3559986248531930
-* American Express Card   379440031696348
-* Diners Club Credit Card 38612028205746
-ожидаемый результат Result is OK
 
+* 4769008194770232 - VISA
+* 5298472761011247 - MasterCard
+* 6011634767694409 - Discover Card
+* 3559986248531930 - JCB Card
+* 379440031696348 - American Express Card
+* 38612028205746 - Diners Club Credit Card
+
+ожидаемый результат Result is OK
 
 
 Тестирование производилось в следующем окружении:
@@ -34,7 +35,5 @@
 openjdk version "11.0.7" 2020-04-14
 OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.7+10)
 OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.7+10, mixed mode)
-
 * IntelliJ IDEA 2020.2 (Community Edition)
 Runtime version: 11.0.7+10-b944.20 amd64
-
